@@ -27,7 +27,7 @@ jobs:
         # labels, so a new release under a label changes nothing with no commit to show for it.
         os: [ubuntu-24.04, windows-latest, macos-15]
     runs-on: ${{ matrix.os }}
-    # The build took 3 seconds and the test 2 on a desktop from an empty package folder
+    # The build took 8 seconds and the test 19 on a desktop from an empty package folder
     # (dotnet build Vegetation.slnx -warnaserror, dotnet test Vegetation.Tests), so 30 minutes is reached
     # only where a restore or a test hangs (N 6.8).
     timeout-minutes: 30

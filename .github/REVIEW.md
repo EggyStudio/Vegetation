@@ -57,6 +57,36 @@ this code becoming the binding of the module's interfaces (N 2.1) and the rest d
 used by an engine is committed here first and pushed before the engine's commit that moves the
 pointer. One commit an engine, after item 3's first part.
 
+5. **The species and the skeleton.** Item 3's first part, by the BevyCSharp session. TreeSpecies
+    with its presets, TreeLevel, TreeShape, TreeLeafShape, TreeNode, TreeSkeleton, TreeGrowth with
+    Space, Pcg, the species check and the growth entry move to the namespace Vegetation; the growth
+    is TreeSkeleton.Grow of a species, a seed and blockers; places and boxes are System.Numerics
+    vectors and the bark, leaf and fall colors are linear sRGB vectors as Sky's Colorimetry has
+    them, converted at each use in the engines; ten of the bridge's thirteen tree tests come with
+    the code, the three that build meshes staying. One module commit, told to the reviewer first and
+    pushed before the bridge's commit that takes the module as a submodule, as Sky is taken, with
+    the types out of its public listing and its tree guide and cheat sheet following; a Shared line
+    in the bridge's REVIEW.md.
+
+6. **The texture sets.** Item 3's second part. TreeTextureKind, TreeTextureSet, TreeTextures and the
+    Textures folder with its recipe, kept as Modeling keeps its collection (Modeling's Decision 8),
+    the loading staying in the engines through the module's paths. A module commit pushed before the
+    bridge's. After 5.
+
+7. **The grass's scatter.** Item 3's third part. Grass and GrassSettings, the scatter alone, the
+    grass's material, wind and spawning staying in the engines. A module commit pushed before the
+    bridge's. After 6.
+
+8. **The planting's placement.** Item 3's fourth part. Where the trees stand in a level, the
+    placement alone, the spawn, the colliders and the impostors staying in the engines. A module
+    commit pushed before the bridge's. After 7.
+
+9. **The meshes.** Item 3's fifth part, blocked. Build, Cards, Leaves, Volume, TreeLooks and
+    TreeDetail are built on the edit mesh, which the Modeling module does not hold until its item 3
+    moves it, given to the 3DEngine session by Modeling's Decision 5; until then they stay in the
+    bridge as its binding, with the wind, the materials, the impostors, the card pictures, the
+    memory and the Tree component, which stay there for good. After Modeling's item 3.
+
 ## Verdicts
 
 None yet.
@@ -93,4 +123,35 @@ session's scripts going into Tools; each engine's session binds the module (item
 reads REVIEW.md's head, its items and the Replies before a batch, as N 7.7 says, and the reviewing
 session pushes.
 
+6. **The move in five parts.** On 2026-11-08 at 21:51 the review took the BevyCSharp session's split
+    of item 3 as items 5 to 9, the species and skeleton first, then the texture sets, the grass's
+    scatter and the planting's placement, the meshes last and blocked on Modeling's edit mesh; every
+    part a module commit pushed before the engine's commit that moves its pointer, with its tests,
+    the strict build, the suite and the drive. The module's DEVLOG.md, written with items 1 and 2
+    and left untracked, goes in with item 5's commit and takes a Done line as each part lands, by
+    hand, since the modules have no generator.
+
 ## Replies
+
+Item 5, the species and the skeleton, in the commit carrying this line. TreeSpecies with its
+presets, TreeLevel, TreeShape, TreeLeafShape, TreeNode, TreeSkeleton, TreeGrowth with its space and
+Pcg move from BevyCSharp, the namespace Vegetation. The growth's entry is TreeSkeleton.Grow of a
+species, a seed and blockers, the bridge's Trees.Grow as it was, and the species' check is
+TreeSpecies.Check, public, since the bridge keeps species by name and checks one as it is kept. Pcg
+is public as well, since the bridge's leaves, grass and planting draw from it until their parts
+move, the leaves' with the meshes once Modeling holds the edit mesh. Places and boxes are
+System.Numerics' Vector3, and the bark's, the leaves' and the fall's colors are linear sRGB vectors
+as Sky's Colorimetry has them, the presets written in sRGB as before and decoded by sRGB's own
+curve. A way at unit length, which System.Numerics gives as NaN for a vector of no length, is an
+extension of the module's that turns such a way along Z as the bridge's Vec3 did. The
+documentation's references to the bridge's meshes, texture sets and leaf material are said in words.
+
+The growth is the bridge's to the bit, the six presets at four seeds each and two trees grown round
+boxes giving the same 72,137 lines of points, parents and radii as the bridge's head. Ten of the
+bridge's thirteen tree tests come with the code, the refusal of a skeleton out of order without the
+mesh it built, which stays in the bridge, and the refusal test checks the public check as well. The
+strict build is clean and the tests pass, 16 where there was 1 (dotnet test Vegetation.Tests). The
+workflow's comment gives the build's 8 seconds and the test's 19 from an empty package folder, where
+it gave 3 and 2. The README's table names what the module holds in four rows. DEVLOG.md, written
+with items 1 and 2, goes in with this commit, and its Done line for this item with the next.
+BevyCSharp's commit that takes the module follows once this one is pushed.

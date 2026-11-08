@@ -5,6 +5,15 @@ species, each one's skeleton grown from a seed, the tree and grass meshes built 
 their texture sets and their placement. It references no engine, and each engine implements the
 interfaces it declares where it binds the module.
 
+## What it holds
+
+| Type | Gives |
+|---|---|
+| `TreeSpecies` | What a kind of tree is, by Weber and Penn's controls of 1995, its crown's outline, its size and how much one varies from the next, its trunk and its levels of branches, its leaves, and its bark's and leaves' colors in linear sRGB, with presets for a quaking aspen, a black tupelo, a weeping willow, a California black oak, a bush and a fern, and `Check`, which refuses a control outside what it may be |
+| `TreeLevel`, `TreeShape` and `TreeLeafShape` | The controls of a level's stems, how they leave the stem before, bend, fork and taper, the crown's outline among the paper's eight or its pruning envelope, and the outline of a leaf an engine generates |
+| `TreeSkeleton` and `TreeNode` | A tree's stems as points, each with the point it grew from, its place and its radius, and `TreeSkeleton.Grow`, which grows one from a species and a seed by space colonization round boxes it does not grow into, a seed growing the same points every time |
+| `Pcg` | The random numbers a tree grows from, O'Neill's PCG, the same for a seed on every runtime, which an engine draws a tree's leaves and its planting from as well |
+
 ## Taking it into an engine
 
 An engine adds the repository as a git submodule under `modules/` and references its project, here
