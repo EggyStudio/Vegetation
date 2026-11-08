@@ -13,4 +13,14 @@
         <WarningsAsErrors>$(WarningsAsErrors);CS1591;CS1574</WarningsAsErrors>
     </PropertyGroup>
 
+    <!-- The texture collection and its manifest, which TreeTextures reads from the assembly, so an
+         engine and a game carry no folder for them. The sets waiting for their source are left out,
+         as they are left out of the repository, so a build on a machine that imported them carries
+         none of them. -->
+    <ItemGroup>
+        <EmbeddedResource Include="Textures/textures.json" LogicalName="Vegetation/Textures/textures.json"/>
+        <EmbeddedResource Include="Textures/**/*.ktx2" Exclude="Textures/waiting/**"
+                          LogicalName="Vegetation/Textures/%(RecursiveDir)%(Filename)%(Extension)"/>
+    </ItemGroup>
+
 </Project>

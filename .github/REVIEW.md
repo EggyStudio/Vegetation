@@ -13,7 +13,10 @@ Directory.Build.targets, makes a missing summary an error, loads the assembly by
 test, and build/version.sh prints 0.1.0; the strict build 0 warnings and 0 errors, the test passing.
 After it `7ec59cf`, the norm alone, the seven repositories named, pushed at 14:51 on 2026-11-03,
 with no run since the build passes over the review's files; it keeps the form. Before it `472e7fa`,
-the owner's first commit alone.
+the owner's first commit alone. Reviewed further up to `c2149be`, item 5, the species and the
+skeleton by the BevyCSharp session, with the module's DEVLOG.md, pushed at 22:36 on 2026-11-08, its
+run green at 22:37 on the three systems in under a minute each; it keeps the form and references no
+engine. Nothing is pushed after it.
 
 ## Now
 
@@ -66,7 +69,10 @@ pointer. One commit an engine, after item 3's first part.
     the code, the three that build meshes staying. One module commit, told to the reviewer first and
     pushed before the bridge's commit that takes the module as a submodule, as Sky is taken, with
     the types out of its public listing and its tree guide and cheat sheet following; a Shared line
-    in the bridge's REVIEW.md.
+    in the bridge's REVIEW.md. Done at `c2149be`, pushed at 22:36 on 2026-11-08; the growth is the
+    bridge's to the bit, 26 skeletons giving the same 72,137 lines of points, parents and radii, ten
+    tests moved and 16 running, Pcg and the species check public while the bridge's leaves, grass
+    and planting draw from them.
 
 6. **The texture sets.** Item 3's second part. TreeTextureKind, TreeTextureSet, TreeTextures and the
     Textures folder with its recipe, kept as Modeling keeps its collection (Modeling's Decision 8),
@@ -155,3 +161,31 @@ workflow's comment gives the build's 8 seconds and the test's 19 from an empty p
 it gave 3 and 2. The README's table names what the module holds in four rows. DEVLOG.md, written
 with items 1 and 2, goes in with this commit, and its Done line for this item with the next.
 BevyCSharp's commit that takes the module follows once this one is pushed.
+
+Item 6, the texture sets, in the commit carrying this line. TreeTextureKind, TreeTextureSet and
+TreeTextures move from BevyCSharp, the namespace Vegetation, with the thirteen sets and their
+manifest under Vegetation/Textures and the recipe, build/textures.py, as Modeling keeps its
+collection. The library embeds the sets and the manifest in its assembly, the sets marked waiting
+apart, so TreeTextures lists and finds them with no engine, and an engine reads each file by its
+path in the collection, which Files lists and Open opens, the set's name and the file's, as
+silver-birch-bark/albedo.ktx2, a game's folder added with Add lying below added/ and its number. The
+loading stays in the engines, the bridge reading every file under a folder of its asset root and
+loading a set's images with their samplers. A set's mean color is linear sRGB in a Vector3 as a
+species' colors are, decoded by the same curve, and its mean surface is public, since the bridge's
+far cards are drawn with it.
+
+The recipe takes --sources, the folder its sources are read under, .vegetation/ at the repository's
+root where none is given, since the sources stay on the machine that imports them, beside the bridge
+here, and the manifest names each source within that folder. Run from the module with the bridge's
+sources, it makes all 43 files of the thirteen sets and the tests' sample the same to the byte as
+the collection and the sample hold. Its docstring gives the formats in their own terms where it
+named Bevy's material and loader. Ten tests come with the code, eight of the bridge's and two new,
+one opening every carried file against its folder's bytes and one reading each set's mean color as
+its manifest's through sRGB's curve, and the leaf boxes' test checks the sets' boxes against the
+manifest as well. The tests that run the recipe stay in the bridge, where a test is skipped on a
+machine without Python 3.14 and Pillow, as do those that load a set on the GPU. The strict build is
+clean and the tests pass, 26 where there were 16. The README names the three types and gives the
+collection's section, which BUILDING.md held in the bridge, and the .gitignore leaves out the
+waiting sets and the sources. DEVLOG.md takes item 5's Done line. AGENTS.md's row for build names
+the version alone, and naming textures.py there, as Modeling's row names its own, waits on the
+owner's word (N 7.4).

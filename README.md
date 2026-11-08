@@ -13,6 +13,7 @@ interfaces it declares where it binds the module.
 | `TreeLevel`, `TreeShape` and `TreeLeafShape` | The controls of a level's stems, how they leave the stem before, bend, fork and taper, the crown's outline among the paper's eight or its pruning envelope, and the outline of a leaf an engine generates |
 | `TreeSkeleton` and `TreeNode` | A tree's stems as points, each with the point it grew from, its place and its radius, and `TreeSkeleton.Grow`, which grows one from a species and a seed by space colonization round boxes it does not grow into, a seed growing the same points every time |
 | `Pcg` | The random numbers a tree grows from, O'Neill's PCG, the same for a seed on every runtime, which an engine draws a tree's leaves and its planting from as well |
+| `TreeTextures`, `TreeTextureSet` and `TreeTextureKind` | The texture collection the module carries in its assembly, bark, leaf and grass sets found by name, each set's files by their paths with the mean color and surface its manifest measured and a leaf atlas's boxes, and a game's own folders of sets added beside them |
 
 ## Taking it into an engine
 
@@ -41,6 +42,27 @@ With the .NET 10 SDK:
 dotnet build Vegetation.slnx
 dotnet test Vegetation.Tests
 ```
+
+## The texture collection
+
+`Vegetation/Textures` holds the bark, leaf and grass sets the module carries in its assembly, which
+`TreeTextures` finds by name, each three KTX2 files in BC7 and BC5 with their mipmaps and zstd over
+each level, and a bark a fourth, its depth in BC4. `build/textures.py` makes them from the sources
+sorted under `.vegetation/`, which the repository leaves out, or under the folder `--sources` names,
+by the recipe the collection's `textures.json` gives each set, the crop, the size, the maps packed
+into each file and any change of color, so a set is made again from its source byte for byte. It
+needs Python 3.14, whose own modules have zstd, and Pillow:
+
+```bash
+build/textures.py                              # import every set whose source is here
+build/textures.py fern-leaves                  # import one
+build/textures.py --sources DIR fern-leaves    # import one from the sources under DIR
+```
+
+A set the manifest marks waiting is imported into `waiting/`, which the repository and the build
+leave out, and `TreeTextures.Add` reads it there for a look on the machine that imported it. A set
+is at most 1024 square, a species' bark and leaves at most 3 MB together and the collection at most
+32 MB, which `TreeTexturesTests` holds.
 
 ## License
 

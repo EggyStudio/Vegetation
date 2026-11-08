@@ -31,5 +31,12 @@ desktop.ini
 # Local-only
 .ref/
 
+# The texture sets build/textures.py imports that the manifest marks waiting, read where they were
+# imported and never carried.
+/Vegetation/Textures/waiting/
+# The sorted sources the texture sets are imported from, kept on the machine that imports them and
+# never in the repository.
+/.vegetation/
+
 # Every picture a session makes while it works, which the owner reads and prunes by day (N 4.10).
 /.github/dump/

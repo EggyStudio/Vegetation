@@ -171,9 +171,10 @@ public sealed partial record TreeSpecies
     /// <inheritdoc/>
     public override int GetHashCode() => HashCode.Combine(Shape, Scale, ScaleVariation, BaseSize, Ratio, AttractionUp, Levels?.Count ?? 0);
 
-    // A color in linear sRGB from its sRGB components, as a color picker gives them, by sRGB's own
-    // curve, so a species' colors are written as an artist picks them and kept as light mixes.
-    private static Vector3 Srgb(float r, float g, float b) => new(Linear(r), Linear(g), Linear(b));
+    // A color in linear sRGB from its sRGB components, as a color picker gives them and the texture
+    // sets' manifest measures them, by sRGB's own curve, so a species' colors are written as an
+    // artist picks them and kept as light mixes.
+    internal static Vector3 Srgb(float r, float g, float b) => new(Linear(r), Linear(g), Linear(b));
 
     private static float Linear(float value) => value <= 0.04045f ? value / 12.92f : MathF.Pow((value + 0.055f) / 1.055f, 2.4f);
 }
