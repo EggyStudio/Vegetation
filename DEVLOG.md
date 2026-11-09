@@ -4,6 +4,12 @@ What landed in Vegetation, by day and newest first, with the pictures taken on t
 the repository keeps under `.github/assets`. A line under Done names the item of .github/REVIEW.md
 or .github/REVIEW-ARCHIVE.md and the commit that closed it.
 
+## 2026-11-09
+
+Done that day
+
+- Item 6 at `f18a993`. The texture sets.
+
 ## 2026-11-08
 
 Done that day

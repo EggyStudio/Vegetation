@@ -1,22 +1,24 @@
 # Review
 
-Reviewed up to `63fc628`, item 2, pushed at 12:31 on 2026-10-31 with `41b4925`, item 1, after the
-owner's first commit, its run green at 12:35 on the three systems in about three minutes, the first
-of this repository. Both commits keep the form, the three-mark subject, one sentence, the owner's
-identity as author and committer, no trailer (N 7.2 and N 7.6 kept at the first commit); the library
-references no engine (N 2.1). The documents are the engines' with the engine's name replaced and the
-engine-only lines dropped, COMMITS.md the game's with N 7.1's pointer rule in place of the legacy
-branch line, .gitignore with the dump folder, .claude and .ref; AGENTS.md's devlog row carries no
-link until DEVLOG.md exists and its table of areas gains the rows item 2 adds. The skeleton sets
-ImportDirectoryBuildTargets false, since a submodule under modules/ would inherit an engine's
-Directory.Build.targets, makes a missing summary an error, loads the assembly by name in its one
-test, and build/version.sh prints 0.1.0; the strict build 0 warnings and 0 errors, the test passing.
-After it `7ec59cf`, the norm alone, the seven repositories named, pushed at 14:51 on 2026-11-03,
-with no run since the build passes over the review's files; it keeps the form. Before it `472e7fa`,
-the owner's first commit alone. Reviewed further up to `c2149be`, item 5, the species and the
-skeleton by the BevyCSharp session, with the module's DEVLOG.md, pushed at 22:36 on 2026-11-08, its
-run green at 22:37 on the three systems in under a minute each; it keeps the form and references no
-engine. Nothing is pushed after it.
+Reviewed up to `f18a993`, item 6, the texture sets with their recipe, carried in the module's
+assembly and opened by their paths, pushed at 01:01 on 2026-11-09, its run green at 01:01 on the
+three systems in under a minute each; it keeps the form and references no engine. Nothing is pushed
+after it. Before it `c2149be`, item 5, the species and the skeleton by the BevyCSharp session, with
+the module's DEVLOG.md, pushed at 22:36 on 2026-11-08, its run green at 22:37 on the three systems
+in under a minute each; it keeps the form and references no engine. Before it `63fc628`, item 2,
+pushed at 12:31 on 2026-10-31 with `41b4925`, item 1, after the owner's first commit, its run green
+at 12:35 on the three systems in about three minutes, the first of this repository. Both commits
+keep the form, the three-mark subject, one sentence, the owner's identity as author and committer,
+no trailer (N 7.2 and N 7.6 kept at the first commit); the library references no engine (N 2.1). The
+documents are the engines' with the engine's name replaced and the engine-only lines dropped,
+COMMITS.md the game's with N 7.1's pointer rule in place of the legacy branch line, .gitignore with
+the dump folder, .claude and .ref; AGENTS.md's devlog row carries no link until DEVLOG.md exists and
+its table of areas gains the rows item 2 adds. The skeleton sets ImportDirectoryBuildTargets false,
+since a submodule under modules/ would inherit an engine's Directory.Build.targets, makes a missing
+summary an error, loads the assembly by name in its one test, and build/version.sh prints 0.1.0; the
+strict build 0 warnings and 0 errors, the test passing. After it `7ec59cf`, the norm alone, the
+seven repositories named, pushed at 14:51 on 2026-11-03, with no run since the build passes over the
+review's files; it keeps the form. Before it `472e7fa`, the owner's first commit alone.
 
 ## Now
 
@@ -77,7 +79,12 @@ pointer. One commit an engine, after item 3's first part.
 6. **The texture sets.** Item 3's second part. TreeTextureKind, TreeTextureSet, TreeTextures and the
     Textures folder with its recipe, kept as Modeling keeps its collection (Modeling's Decision 8),
     the loading staying in the engines through the module's paths. A module commit pushed before the
-    bridge's. After 5.
+    bridge's. After 5. Done at `f18a993`, pushed at 01:01 on 2026-11-09; the 13 sets and their
+    manifest under Vegetation/Textures, embedded in the module's assembly, TreeTextures.Files
+    listing every file by its path and Open opening one, an added set under added/<n>/, the recipe
+    taking --sources since the sources stay in the bridge's .vegetation and rebuilding all 43 files
+    byte for byte, MeanColor a linear sRGB vector, ten tests moved or new, the loading staying in
+    the bridge as TreeTextureAssets.
 
 7. **The grass's scatter.** Item 3's third part. Grass and GrassSettings, the scatter alone, the
     grass's material, wind and spawning staying in the engines. A module commit pushed before the
@@ -189,3 +196,24 @@ collection's section, which BUILDING.md held in the bridge, and the .gitignore l
 waiting sets and the sources. DEVLOG.md takes item 5's Done line. AGENTS.md's row for build names
 the version alone, and naming textures.py there, as Modeling's row names its own, waits on the
 owner's word (N 7.4).
+
+Item 7, the grass's scatter, in the commit carrying this line. GrassSettings moves from BevyCSharp
+whole, the namespace Vegetation, and the scatter that was the bridge's Grass.Plant and Grass.Patch
+is GrassScatter. Its Patches cuts a stretch into the square patches its grass is drawn in, each a
+GrassPatch with its column, its row, its middle, its size and its seed, and its Clumps scatters a
+patch's clumps a cell each, each a GrassClump with its root, its turn, its height and the two phases
+it sways by. A clump's numbers are drawn from Pcg in the order the bridge drew them, so the bridge's
+patches and meshes are the same to the bit, 400 patches' meshes over four settings, five sizes, five
+seeds and four widths of picture hashed whole and 161 patches' places over ten stretches the same as
+the bridge's before the move, with its three refusals' arguments and messages. The two cards a clump
+is drawn as, their width from the set's picture, the sway streams, the material, the wind and the
+patches' entities stay in the engines, the bridge's Grass.Plant planting what the scatter gives. The
+refusals are the bridge's, a stretch of no size as the size argument and a setting out of range or a
+set that is not grass as the settings argument, and Clumps refuses what Patches does but the set,
+which it does not read.
+
+Four tests come with the code, the bridge's test of a seed scattering the same patch and three new,
+the patches a stretch is cut into, a patch's clumps a cell each on the ground and the refusals,
+which the bridge's tests checked through what it planted. The strict build is clean and the tests
+pass, 30 where there were 26. The README names the four types in a row, and DEVLOG.md takes item 6's
+Done line.

@@ -14,6 +14,7 @@ interfaces it declares where it binds the module.
 | `TreeSkeleton` and `TreeNode` | A tree's stems as points, each with the point it grew from, its place and its radius, and `TreeSkeleton.Grow`, which grows one from a species and a seed by space colonization round boxes it does not grow into, a seed growing the same points every time |
 | `Pcg` | The random numbers a tree grows from, O'Neill's PCG, the same for a seed on every runtime, which an engine draws a tree's leaves and its planting from as well |
 | `TreeTextures`, `TreeTextureSet` and `TreeTextureKind` | The texture collection the module carries in its assembly, bark, leaf and grass sets found by name, each set's files by their paths with the mean color and surface its manifest measured and a leaf atlas's boxes, and a game's own folders of sets added beside them |
+| `GrassScatter`, `GrassSettings`, `GrassPatch` and `GrassClump` | Where grass stands over a stretch of ground, the stretch cut into square patches an engine draws as a mesh each, and each patch's clumps scattered a cell each by the patch's own seed, a clump's root, turn, height and phases in the wind, with the settings a stretch is planted with |
 
 ## Taking it into an engine
 
