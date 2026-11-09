@@ -1,15 +1,17 @@
 # Review
 
-Reviewed up to `f18a993`, item 6, the texture sets with their recipe, carried in the module's
-assembly and opened by their paths, pushed at 01:01 on 2026-11-09, its run green at 01:01 on the
-three systems in under a minute each; it keeps the form and references no engine. Nothing is pushed
-after it. Before it `c2149be`, item 5, the species and the skeleton by the BevyCSharp session, with
-the module's DEVLOG.md, pushed at 22:36 on 2026-11-08, its run green at 22:37 on the three systems
-in under a minute each; it keeps the form and references no engine. Before it `63fc628`, item 2,
-pushed at 12:31 on 2026-10-31 with `41b4925`, item 1, after the owner's first commit, its run green
-at 12:35 on the three systems in about three minutes, the first of this repository. Both commits
-keep the form, the three-mark subject, one sentence, the owner's identity as author and committer,
-no trailer (N 7.2 and N 7.6 kept at the first commit); the library references no engine (N 2.1). The
+Reviewed up to `d604e4d`, item 7, the grass's scatter, pushed at 02:42 on 2026-11-09, its run green
+at 02:43 on the three systems in under a minute each; it keeps the form and references no engine.
+Nothing is pushed after it. Before it `f18a993`, item 6, the texture sets with their recipe, carried
+in the module's assembly and opened by their paths, pushed at 01:01 on 2026-11-09, its run green at
+01:01 on the three systems in under a minute each; it keeps the form and references no engine.
+Before it `c2149be`, item 5, the species and the skeleton by the BevyCSharp session, with the
+module's DEVLOG.md, pushed at 22:36 on 2026-11-08, its run green at 22:37 on the three systems in
+under a minute each; it keeps the form and references no engine. Before it `63fc628`, item 2, pushed
+at 12:31 on 2026-10-31 with `41b4925`, item 1, after the owner's first commit, its run green at
+12:35 on the three systems in about three minutes, the first of this repository. Both commits keep
+the form, the three-mark subject, one sentence, the owner's identity as author and committer, no
+trailer (N 7.2 and N 7.6 kept at the first commit); the library references no engine (N 2.1). The
 documents are the engines' with the engine's name replaced and the engine-only lines dropped,
 COMMITS.md the game's with N 7.1's pointer rule in place of the legacy branch line, .gitignore with
 the dump folder, .claude and .ref; AGENTS.md's devlog row carries no link until DEVLOG.md exists and
@@ -88,11 +90,19 @@ pointer. One commit an engine, after item 3's first part.
 
 7. **The grass's scatter.** Item 3's third part. Grass and GrassSettings, the scatter alone, the
     grass's material, wind and spawning staying in the engines. A module commit pushed before the
-    bridge's. After 6.
+    bridge's. After 6. Done at `d604e4d`, pushed at 02:42 on 2026-11-09; GrassSettings whole,
+    GrassScatter cutting a stretch into patches and scattering each patch's clumps by its seed in
+    the bridge's order, the same to the bit as the bridge before the move over 400 patch meshes and
+    161 places, four tests with it and 30 passing, the cards, the sway, the material, the wind and
+    the entities staying in the engines.
 
 8. **The planting's placement.** Item 3's fourth part. Where the trees stand in a level, the
     placement alone, the spawn, the colliders and the impostors staying in the engines. A module
-    commit pushed before the bridge's. After 7.
+    commit pushed before the bridge's. After 7. As proposed by the BevyCSharp session on 2026-11-09
+    and taken, the part holds the variants' count and each variant's seed, a tree's stance from its
+    seed, its variant, its turn and its size within a tenth either way, and the forest's spread over
+    a disc, so a level's trees stand the same in both engines; the spawn, the colliders, the
+    dressing and the impostors stay in the engines.
 
 9. **The meshes.** Item 3's fifth part, blocked. Build, Cards, Leaves, Volume, TreeLooks and
     TreeDetail are built on the edit mesh, which the Modeling module does not hold until its item 3
@@ -217,3 +227,23 @@ the patches a stretch is cut into, a patch's clumps a cell each on the ground an
 which the bridge's tests checked through what it planted. The strict build is clean and the tests
 pass, 30 where there were 26. The README names the four types in a row, and DEVLOG.md takes item 6's
 Done line.
+
+Item 8, the planting's placement, in the commit carrying this line. TreePlanting holds where trees
+stand and how each stands, Variants, the eight variants a species grows, VariantSeed, the seed a
+variant grows from apart from any a game gives, Stance, a tree's variant, turn and size of a tenth
+either way from its seed as a TreeStance, and Forest, a forest's trees spread over a disc from a
+seed by Poisson disk sampling by trial, each tree's place and its own seed. They were the bridge's
+Trees.Variants, its variants' seeds, the turn and size it dressed a tree with and its forest's
+places, and the numbers are drawn from Pcg in the order the bridge drew them, so a level's trees
+stand the same in either engine. Planted through the bridge before and after the move, 35 forests'
+2,093 trees stand at the same places with the same seeds to the bit, 48 dressed trees of two species
+turn and size the same with their 228 colliders, and the five refusals of a forest keep their kinds,
+arguments, messages and order. The spawn, the registry of species by name, the dressing, the
+colliders and the impostors stay in the engines. A forest's distance between two trees is summed a
+product at a time, as the bridge summed it, rather than by a library's dot product.
+
+Four tests come with the code, the bridge's forest test with the seed's spread and three new, a
+tree's stance from its seed, the variants' seeds and the forests refused, the bridge keeping a test
+that plants a forest where the module spreads it. The strict build is clean and the tests pass, 34
+where there were 30. The README names TreePlanting and TreeStance in a row and Pcg's row the grass
+and the planting it draws for, and DEVLOG.md takes item 7's Done line.

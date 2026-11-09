@@ -9,6 +9,7 @@ or .github/REVIEW-ARCHIVE.md and the commit that closed it.
 Done that day
 
 - Item 6 at `f18a993`. The texture sets.
+- Item 7 at `d604e4d`. The grass's scatter.
 
 ## 2026-11-08
 
